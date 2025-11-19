@@ -12,23 +12,21 @@ math.cos().
 import math
 
 def raiz():
-    print('Ingresa un número para la raiz cuadrada:')
-    numUser = float(input())
+    numUser = float(input('Ingresa un número para la raiz cuadrada:'))
     print(f'la raiz de {numUser} es: {math.sqrt(numUser)}')
 
 def area():
-    print('Ingresa un número para calcular el área del círculo:')
-    radio = float(input())
+    radio = float(input('Ingresa un número para calcular el área del círculo:'))
     area = math.pi * math.pow(radio,2)
     print(f'El áreal del círculo con radio {radio} es: {area}')
 
 def senAndCos():
-    print('Ingresa un ángulo en grados:')
-    angulo = math.radians(float(input()))
+    angulo = math.radians(float(input('Ingresa un ángulo en grados:')))
     sin = math.sin(angulo)
     cos = math.cos(angulo)
     print(f'El seno y coseno del ángulo {angulo}° es: {sin} , {cos}')
 
-senAndCos()
+if __name__ == "__main__":
+    senAndCos()
 
 

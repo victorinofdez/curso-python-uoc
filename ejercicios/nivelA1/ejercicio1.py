@@ -6,10 +6,8 @@ Busca en la web.
 objeto o lugar y genera una frase con las 3 variables.
 '''
 
-print('Escribe tu nombre: ')
-nombre = input()
-print('Escribe un color: ')
-color = input()
-print('Escribe un lugar: ')
-lugar = input()
-print(f'Hola {nombre}!, tu color es {color} y el lugar es {lugar}.')
+if __name__ == "__main__":
+    nombre = input('Escribe tu nombre: ')
+    color = input('Escribe un color: ')
+    lugar = input('Escribe un lugar: ')
+    print(f'Hola {nombre}!, tu color es {color} y el lugar es {lugar}.')
