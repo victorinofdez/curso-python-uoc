@@ -17,3 +17,44 @@ random.randint().
 
 '''
 
+import random
+
+
+def askNumber(randomNumber):
+    userNumber = int(input('introduce un número entre el 1 al 10:'))
+
+    if userNumber >= 0 and userNumber <= 10:
+        while userNumber != randomNumber:
+            userNumber = int(input('No es el número correcto, ingresa otro:'))
+        print(f'!Enhorabuena has acertado!, El número era {randomNumber} y tu numero era {userNumber}')  
+    else:
+        print(f'Ingresa un número Válido entre 0 y 10')              
+
+def generateRandomNumbers(number):
+    numbers=[]
+    for _ in range(number):
+        numbers.append(random.randint(0,100))
+    return numbers
+
+def media(numeros):
+    suma = 0
+    for num in numeros:
+        suma += num
+    total = suma/len(numeros)
+    return total
+
+def dado():
+    return random.randint(1,6)
+
+if __name__ == '__main__':
+
+    #randomNumber = random.randint(0,10) 
+    #askNumber(randomNumber)
+    
+
+    #numeros = generateRandomNumbers(3)
+    #total = media(numeros)
+    #print(numeros, total)
+
+    res = dado()
+    print(res)
